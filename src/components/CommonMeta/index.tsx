@@ -11,12 +11,12 @@ export default function CommonMeta({
   pageImgWidth,
   pageImgHeight,
 }: MetaData) {
-  const defaultTitle = "Google Developers Student Clubs Waseda";
+  const defaultTitle = "Google Developers Groups on Campus Waseda University";
   const defaultDescription =
-    "GDSC Waseda is a student society supported by Google Developers based in Waseda Univ., Tokyo";
+    "GDGoC Waseda is a student society supported by Google Developers based in Waseda Univ., Tokyo";
   const defaultUrl = env.PUBLIC_URL;
-  const defaultKeywords = "GDSC Waseda";
-  const siteName = "GDSC Waseda Official Website";
+  const defaultKeywords = "GDGoC Waseda";
+  const siteName = "GDGoC Waseda Official Website";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription
