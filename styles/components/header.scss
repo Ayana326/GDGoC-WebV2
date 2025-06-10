@@ -94,6 +94,10 @@
     span {
       margin-left: 15px;
     }
+
+    @media (max-width: 790px) {
+      max-width: 30px;
+    }
   }
 
   .navItem {

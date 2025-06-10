@@ -14,26 +14,23 @@ export const Footer = (): JSX.Element => {
         <a
           href="https://gdg.community.dev/gdg-on-campus-waseda-university-tokyo-japan/"
           target="_blank"
-          className="footer__pathItem"
           rel="noreferrer"
         >
-          <Image src={Google} layout="intrinsic" alt="google" />
+          <Image src={Google} layout="intrinsic" alt="google"/>
         </a>
         <a
           href="https://www.instagram.com/gdgcampus_waseda/"
-          className="footer__pathItem"
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={Instagram} layout="intrinsic" alt="instagram" />
+          <Image src={Instagram} layout="intrinsic" alt="instagram"/>
         </a>
         <a
           href="https://www.linkedin.com/company/gdg-on-campus-waseda-university/"
-          className="footer__pathItem"
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={LinkedIn} layout="intrinsic" alt="linkdin" />
+          <Image src={LinkedIn} layout="intrinsic" alt="linkdin"/>
         </a>
       </div>
       <div className="footer__reserved">All Rights Reserved by GDGoC Waseda</div>
