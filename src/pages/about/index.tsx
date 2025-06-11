@@ -67,13 +67,6 @@ export const AboutPage: NextPage = () => {
   const card: HeaderCardProps = {
     headTitle: "",
     title: t("about:header"),
-    content: "",
-    button: true,
-    buttonText: t("about:discButt"),
-  };
-
-  const whatWeDo: TextCardProps = {
-    title: t("about:what"),
     content: t("about:motomesg"),
   };
 
@@ -89,12 +82,6 @@ export const AboutPage: NextPage = () => {
         pageImgHeight={630}
       />
       <HeaderCard props={card} />
-
-      {/* What We Do Section */}
-      <div className="textCard__section">
-        <h2 className="textCard__section__title">{whatWeDo.title}</h2>
-        <p className="textCard__section__content">{whatWeDo.content}</p>
-      </div>
 
       {/* Current Lead Section */}
       <div className="current-lead-section">

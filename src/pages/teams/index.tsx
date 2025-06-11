@@ -212,13 +212,6 @@ export const TeamsPage: NextPage = () => {
       />
       <HeaderCard props={card} />
 
-      <div className="bold-text">
-        <a>
-          {t("teams:team_second_mes")}
-          <br></br>
-        </a>
-      </div>
-
       <YearBox
         years={Object.keys(teamLeadersByYear)}
         selectedYear={selectedYear}
