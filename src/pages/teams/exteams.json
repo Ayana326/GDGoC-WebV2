@@ -37,15 +37,6 @@
       "linkedInUrl": "https://www.linkedin.com/in/jeremy-siburian/"
     },
     {
-      "team": "Operations",
-      "name": "Cedric",
-      "image": "operations_lead22.jpg",
-      "image2": null,
-      "multiple": false,
-      "color": "green",
-      "linkedInUrl": "https://www.linkedin.com/in/cedric-purwanto-b5b62721a/"
-    },
-    {
       "team": "Marketing",
       "name": "Tina",
       "image": "marketing_lead22.png",
@@ -60,8 +51,17 @@
       "image": "finance_lead22.jpg",
       "image2": null,
       "multiple": false,
-      "color": "yellow",
+      "color": "green",
       "linkedInUrl": "https://www.linkedin.com/in/monamatsuda/"
+    },
+    {
+      "team": "Operations",
+      "name": "Cedric",
+      "image": "operations_lead22.jpg",
+      "image2": null,
+      "multiple": false,
+      "color": "yellow",
+      "linkedInUrl": "https://www.linkedin.com/in/cedric-purwanto-b5b62721a/"
     }
   ],
   "GDSC 21/22": [
