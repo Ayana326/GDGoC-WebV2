@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React, { useEffect, useState } from "react";
-import { HeaderCard, CategoryBar } from "components/Cards/index";
+import { HeaderCard, CategoryBar, YearBox } from "components/Cards/index";
 import CommonMeta from "components/CommonMeta";
 import { HeaderCardProps } from "~/types";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -118,21 +118,21 @@ export const TeamsPage: NextPage = () => {
     teamLeaders.map((leader) => leader.image)
   );
 
-  const handleSwapClick = (index: number) => {
-    setTeamLeaderImages((prevImages) => {
-      const newImages = [...prevImages];
-      const teamLeader = teamLeaders[index];
+  // const handleSwapClick = (index: number) => {
+  //   setTeamLeaderImages((prevImages) => {
+  //     const newImages = [...prevImages];
+  //     const teamLeader = teamLeaders[index];
 
-      if (teamLeader.multiple && teamLeader.image2) {
-        newImages[index] =
-          newImages[index] === teamLeader.image
-            ? teamLeader.image2
-            : teamLeader.image;
-      }
+  //     if (teamLeader.multiple && teamLeader.image2) {
+  //       newImages[index] =
+  //         newImages[index] === teamLeader.image
+  //           ? teamLeader.image2
+  //           : teamLeader.image;
+  //     }
 
-      return newImages;
-    });
-  };
+  //     return newImages;
+  //   });
+  // };
 
   const [selectedYear, setSelectedYear] = useState("GDSC 23/24");
 
@@ -203,10 +203,10 @@ export const TeamsPage: NextPage = () => {
         </a>
       </div>
 
-      <CategoryBar
-        categories={Object.keys(teamLeadersByYear)}
-        selectedCategory={selectedYear}
-        onCategoryChange={handleYearChange}
+      <YearBox
+        years={Object.keys(teamLeadersByYear)}
+        selectedYear={selectedYear}
+        onYearChange={handleYearChange}
       />
       <div className="team-leaders-wrapper">
         <div className="team-leaders-container">
@@ -224,7 +224,7 @@ export const TeamsPage: NextPage = () => {
                       alt="team leader"
                     />
                   </a>
-                  <button
+                  {/* <button
                     className="team-leader-swap-button"
                     onClick={() => handleSwapClick(index)}
                   >
@@ -233,7 +233,7 @@ export const TeamsPage: NextPage = () => {
                       src={`/tempImg/arrows-${teamCard.color}.png`}
                       alt="arrows"
                     />
-                  </button>
+                  </button> */}
                 </div>
               ) : (
                 <a
