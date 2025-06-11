@@ -212,19 +212,22 @@ export const TeamsPage: NextPage = () => {
       />
       <HeaderCard props={card} />
 
-      <YearBox
-        years={Object.keys(teamLeadersByYear)}
-        selectedYear={selectedYear}
-        onYearChange={handleYearChange}
-      />
-      <CategoryBar
-        categories={teams}
-        selectedCategory={selectedTeam}
-        onCategoryChange={(team) => {
-          setSelectedTeam(team);
-          teamRefs[team]?.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-        }}
-      />
+      <div className="team-filters">
+        <YearBox
+          years={Object.keys(teamLeadersByYear)}
+          selectedYear={selectedYear}
+          onYearChange={handleYearChange}
+        />
+        <CategoryBar
+          categories={teams}
+          selectedCategory={selectedTeam}
+          onCategoryChange={(team) => {
+            setSelectedTeam(team);
+            teamRefs[team]?.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        />
+      </div>
+      
       <div className="team-leaders-wrapper">
         <div className="team-leaders-container">
           {filteredTeamLeaders.map((teamCard, index) => (

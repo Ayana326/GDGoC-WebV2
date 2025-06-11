@@ -3,6 +3,17 @@
   src: url("/fonts/prodsanB.ttf");
 }
 
+.team-page {
+  overflow: visible;
+}
+
+.team-filters {
+  position: sticky;
+  top: 64px; 
+  z-index: 10;
+  background-color: white;
+}
+
 .team-leaders-wrapper {
   max-width: 1400px;
   margin: 0 auto;
