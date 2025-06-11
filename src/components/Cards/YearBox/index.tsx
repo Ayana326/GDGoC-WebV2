@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { YearBarProps } from "~/types/index";
+import { YearBoxProps } from "~/types/index";
 
-export const YearBox: React.FC<YearBarProps> = ({
+export const YearBox: React.FC<YearBoxProps> = ({
   years,
   selectedYear,
   onYearChange,
@@ -12,7 +12,7 @@ export const YearBox: React.FC<YearBarProps> = ({
   };
 
   return (
-    <div className="year-bar">
+    <div className="year-box">
       {
         <select value={selectedYear} onChange={handleChange}>
             {years.map((year) => (

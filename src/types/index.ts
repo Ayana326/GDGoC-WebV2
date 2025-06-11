@@ -25,12 +25,6 @@ export interface CarouselCardProps {
   link: string;
 }
 
-export type YearBarProps = {
-  years: string[];
-  selectedYear: string;
-  onYearChange: (year: string) => void;
-};
-
 export type YearBoxProps = {
   years: string[];
   selectedYear: string;
